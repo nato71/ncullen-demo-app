@@ -5,6 +5,8 @@ gemfile = File.expand_path('../../Gemfile', __FILE__)
 begin
   ENV['BUNDLE_GEMFILE'] = gemfile
   require 'bundler'
+  gem 'bundler'
+
   Bundler.setup
 rescue Bundler::GemNotFound => e
   STDERR.puts e.message
